@@ -3,7 +3,7 @@
 **Name:** Amelia Vasiliu
 **NetID:** ega9cw
 **DOI:** *(add after uploading to Zenodo or OSF)*
-**Press Release:** [Congressional Races Are Decided by Demographics, Not Polls](#press-release)
+**Press Release:** [Congressional Races Are Decided by Demographics, Not Polls](https://github.com/ameliavasiliu/Project-1-Relational-Model/blob/main/Press_Release.md)
 **Data:** [UVA OneDrive Data Folder] https://myuva-my.sharepoint.com/:f:/r/personal/ega9cw_virginia_edu/Documents/Project-1-Relational-Model?csf=1&web=1&e=O6hjyP
 **Pipeline:** https://github.com/ameliavasiliu/Project-1-Relational-Model/blob/main/code/06_pipeline.py
 **License:** MIT License -- see [LICENSE](LICENSE)
