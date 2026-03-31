@@ -4,8 +4,8 @@
 **NetID:** ega9cw
 **DOI:** *(add after uploading to Zenodo or OSF)*
 **Press Release:** [Congressional Races Are Decided by Demographics, Not Polls](#press-release)
-**Data:** [UVA OneDrive Data Folder](*(add OneDrive link here)*)
-**Pipeline:** [code/06_pipeline.py](code/06_pipeline.py)
+**Data:** [UVA OneDrive Data Folder] https://myuva-my.sharepoint.com/:f:/r/personal/ega9cw_virginia_edu/Documents/Project-1-Relational-Model?csf=1&web=1&e=O6hjyP
+**Pipeline:** https://github.com/ameliavasiliu/Project-1-Relational-Model/blob/main/code/06_pipeline.py
 **License:** MIT License -- see [LICENSE](LICENSE)
 
 ---
@@ -159,11 +159,11 @@ Relationships: `districts` to `elections`, `demographics`, and `results_model` a
 
 | Table | Description | Link |
 |-------|-------------|------|
-| `districts.parquet` | One row per congressional district (435 rows). Stores static geographic identity and urban-rural classification. Primary key: `district_id` | [OneDrive](*(add link)*) |
-| `elections.parquet` | One row per district per election year (2,256 rows). Stores vote outcomes, incumbency flags, lagged features, and party flip indicator. Primary key: (`district_id`, `year`) | [OneDrive](*(add link)*) |
-| `demographics.parquet` | One row per district per election year (2,256 rows). Stores ACS socioeconomic features. Primary key: (`district_id`, `year`) | [OneDrive](*(add link)*) |
-| `national_context.parquet` | One row per election year (6 rows). Stores national macroeconomic and political environment variables. Primary key: `year` | [OneDrive](*(add link)*) |
-| `results_model.parquet` | One row per district per election year with model-predicted flip probabilities. Primary key: (`district_id`, `year`) | [OneDrive](*(add link)*) |
+| `districts.parquet` | One row per congressional district (435 rows). Stores static geographic identity and urban-rural classification. Primary key: `district_id` | https://myuva-my.sharepoint.com/:u:/r/personal/ega9cw_virginia_edu/Documents/Project-1-Relational-Model/districts.parquet?csf=1&web=1&e=eX8UKy |
+| `elections.parquet` | One row per district per election year (2,256 rows). Stores vote outcomes, incumbency flags, lagged features, and party flip indicator. Primary key: (`district_id`, `year`) | https://myuva-my.sharepoint.com/:u:/r/personal/ega9cw_virginia_edu/Documents/Project-1-Relational-Model/elections.parquet?csf=1&web=1&e=dmiKVJ |
+| `demographics.parquet` | One row per district per election year (2,256 rows). Stores ACS socioeconomic features. Primary key: (`district_id`, `year`) | https://myuva-my.sharepoint.com/:u:/r/personal/ega9cw_virginia_edu/Documents/Project-1-Relational-Model/demographics.parquet?csf=1&web=1&e=MoKqzh |
+| `national_context.parquet` | One row per election year (6 rows). Stores national macroeconomic and political environment variables. Primary key: `year` | https://myuva-my.sharepoint.com/:u:/r/personal/ega9cw_virginia_edu/Documents/Project-1-Relational-Model/national_context.parquet?csf=1&web=1&e=XvmNzG |
+| `results_model.parquet` | One row per district per election year with model-predicted flip probabilities. Primary key: (`district_id`, `year`) | https://myuva-my.sharepoint.com/:u:/r/personal/ega9cw_virginia_edu/Documents/Project-1-Relational-Model/results_model.parquet?csf=1&web=1&e=O8HKyY |
 
 **Data Dictionary**
 
@@ -269,7 +269,7 @@ All statistics are computed from the full dataset (n = 2,256 district-year obser
 |---------|------|---------|-----|-----|---------|-------------------|
 | total_population | 735,276 | 41,453 | 523,851 | 941,210 | 0 | ACS 5-year published margins of error at the congressional district level are typically plus or minus 1 to 3 percent of the point estimate. The std dev of 41,453 reflects genuine cross-district population variation rather than measurement error |
 | cvap_total | 566,756 | 36,549 | 413,396 | 721,226 | 0 | ACS published margin of error is typically plus or minus 0.5 to 1.5 percent of the CVAP estimate. Additional uncertainty comes from citizenship self-reporting, which may undercount non-citizen residents who misidentify as citizens |
-| median_income | 63,322 | 18,897 | 25,351 | 168,712 | 0 | ACS income margins of error at the district level are typically plus or minus 2 to 5 percent of the point estimate. Expressed in nominal dollars; cumulative CPI inflation from 2012 to 2022 was approximately 30 percent, so cross-year comparisons require adjustment |
+| median_income | 63,322 | 18,897 | 25,351 | 168,712 | 0 | ACS income margins of error at the district level are typically plus or minus 2 to 5 percent of the point estimate. Expressed in nominal dollars, cumulative CPI inflation from 2012 to 2022 was approximately 30 percent, so cross-year comparisons require adjustment |
 | median_age | 38.26 | 3.61 | 27.4 | 55.7 | 0 | ACS published margin of error for median age at the congressional district level is typically plus or minus 0.3 to 0.8 years. The std dev of 3.61 reflects genuine demographic variation across districts |
 | median_home_value | 257,880 | 175,384 | 58,900 | 1,458,600 | 0 | Very high std dev of 175,384 reflects substantial cross-district variation. ACS margin of error can exceed plus or minus 10,000 dollars in rapidly appreciating high-cost markets; top-coded values in high-cost districts may compress the true upper tail |
 | pct_college | 0.310 | 0.106 | 0.080 | 0.793 | 0 | Denominator is adults 25 and older rather than total population; sensitive to age composition differences across districts. ACS margin of error is typically plus or minus 0.5 to 1.5 percentage points at this geography |
@@ -279,7 +279,7 @@ All statistics are computed from the full dataset (n = 2,256 district-year obser
 | pct_asian | 0.053 | 0.066 | 0.003 | 0.567 | 0 | Same self-reporting limitation as pct_white. ACS estimates for smaller subgroups carry proportionally larger margins of error relative to the point estimate |
 | pct_hispanic | 0.170 | 0.173 | 0.008 | 0.911 | 0 | Denominator is total population rather than adults 25 and older, making this not directly comparable to the education proportions in the same table. High std dev of 0.173 reflects geographic concentration |
 | pct_nonwhite | 0.276 | 0.170 | 0.033 | 0.865 | 0 | Derived as 1 minus pct_white; inherits all self-reporting uncertainty from that variable and does not distinguish among non-white demographic groups |
-| poverty_rate | 0.140 | 0.051 | 0.039 | 0.395 | 0 | ACS poverty estimates have higher margins of error in more homogeneous districts. The federal poverty threshold is a fixed income level not adjusted for regional cost of living, introducing geographic comparability concerns |
+| poverty_rate | 0.140 | 0.051 | 0.039 | 0.395 | 0 | ACS poverty estimates have higher margins of error in more homogeneous districts. The federal poverty threshold is a fixed income level not adjusted for the regional cost of living, introducing geographic comparability concerns |
 | district_unemployment_rate | 0.070 | 0.026 | 0.024 | 0.215 | 0 | ACS-based annual average rather than a point-in-time rate at election day. ACS margin of error at this geography is typically plus or minus 0.5 to 1.0 percentage points. Std dev of 0.026 reflects genuine variation across districts |
 | owner_occ_rate | 0.649 | 0.104 | 0.091 | 0.841 | 0 | ACS housing tenure estimates are generally reliable; margin of error is typically plus or minus 1 to 2 percentage points at the district level |
 | health_ins_rate | 0.489 | 0.008 | 0.448 | 0.522 | 0 | Notably low std dev of 0.008 across all 2,256 observations indicates limited cross-district variation as measured by the ACS. The ACS health insurance question wording changed slightly across survey years, introducing minor comparability concerns for trend analysis |
@@ -290,6 +290,6 @@ All statistics are computed from the full dataset (n = 2,256 district-year obser
 |---------|------|---------|-----|-----|---------|-------------------|
 | generic_ballot_margin | 0.96 | 5.13 | -5.7 | 8.6 | 0 | Based on RealClearPolitics final poll averages; methodological differences across pollsters and systematic house effects introduce measurement uncertainty of approximately plus or minus 1 to 2 percentage points. The std dev of 5.13 across the six election years reflects genuine year-to-year national environment variation |
 | pres_popular_margin | 3.52 | 1.02 | 2.1 | 4.5 | 0 | Certified FEC results; measurement uncertainty is negligible. The std dev of 1.02 reflects variation across the three presidential cycles represented in this dataset |
-| natl_unemployment_rate | 5.78 | 1.87 | 3.6 | 8.1 | 0 | BLS annual average from monthly Current Population Survey estimates; national-level standard error is less than 0.1 percentage points. The std dev of 1.87 across years reflects genuine economic cycle variation including the 8.1 percent rate during the 2020 COVID contraction |
-| natl_gdp_growth | 1.31 | 2.22 | -3.4 | 3.0 | 0 | BEA advance estimates are typically revised by less than 0.5 percentage points in subsequent releases. The std dev of 2.22 reflects genuine year-to-year variation including the -3.4 percent contraction in 2020 |
+| natl_unemployment_rate | 5.78 | 1.87 | 3.6 | 8.1 | 0 | BLS annual average from monthly Current Population Survey estimates; national-level standard error is less than 0.1 percentage points. The std dev of 1.87 across years reflects genuine economic cycle variation, including the 8.1 percent rate during the 2020 COVID contraction |
+| natl_gdp_growth | 1.31 | 2.22 | -3.4 | 3.0 | 0 | BEA advance estimates are typically revised by less than 0.5 percentage points in subsequent releases. The std dev of 2.22 reflects genuine year-to-year variation, including the -3.4 percent contraction in 2020 |
 | pres_approval | 44.03 | 3.41 | 40.4 | 49.1 | 0 | Gallup annual average based on approximately 350 daily tracking polls per year; margin of error is approximately plus or minus 1 percentage point. The std dev of 3.41 across election years reflects genuine variation in presidential popularity over the 2012 to 2022 period |
