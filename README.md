@@ -1,18 +1,22 @@
 # DS 4320 Project 1: Predicting Competitive US House District Outcomes Using Demographic and Structural Features
 
-**Name:** Amelia Vasiliu
-**NetID:** ega9cw
-**DOI:** *(add after uploading to Zenodo or OSF)*
-**Press Release:** [Congressional Races Are Decided by Demographics, Not Polls](https://github.com/ameliavasiliu/Project-1-Relational-Model/blob/main/Press_Release.md)
-**Data:** [UVA OneDrive Data Folder] https://myuva-my.sharepoint.com/:f:/r/personal/ega9cw_virginia_edu/Documents/Project-1-Relational-Model?csf=1&web=1&e=O6hjyP
-**Pipeline:** https://github.com/ameliavasiliu/Project-1-Relational-Model/blob/main/code/06_pipeline.py
-**License:** MIT License -- see [LICENSE](LICENSE)
-
----
-
 **Executive Summary**
 
 This repository contains a fully constructed secondary dataset covering US House of Representatives elections from 2012 through 2022, built using the relational model. The dataset combines district-level electoral returns from the MIT Election Data and Science Lab with demographic estimates from the US Census Bureau American Community Survey, national economic and political context variables, and a suite of derived predictive features, including lagged margins, party flip indicators, and competitiveness scores. The data is structured as five relational tables stored in parquet format and linked by shared district and year keys, totaling over 1 MB of data across 2,256 district-year observations and 45 features. A gradient boosting model trained on the dataset predicts party seat flips with a cross-validated ROC-AUC of 0.96 and a held-out 2022 test AUC of 0.98, demonstrating that demographic and structural features contain a strong predictive signal about competitive House outcomes.
+
+**Name:** Amelia Vasiliu
+
+**NetID:** ega9cw
+
+**DOI:** *(add after uploading to Zenodo or OSF)*
+
+**Press Release:** [Congressional Races Are Decided by Demographics, Not Polls](https://github.com/ameliavasiliu/Project-1-Relational-Model/blob/main/Press_Release.md)
+
+**Data:** [UVA OneDrive Data Folder](https://myuva-my.sharepoint.com/:f:/r/personal/ega9cw_virginia_edu/Documents/Project-1-Relational-Model?csf=1&web=1&e=O6hjyP)
+
+**Pipeline:** https://github.com/ameliavasiliu/Project-1-Relational-Model/blob/main/code/06_pipeline.py
+
+**License:** MIT License -- see [LICENSE](LICENSE)
 
 ---
 
