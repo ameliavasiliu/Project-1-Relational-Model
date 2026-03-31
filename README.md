@@ -12,7 +12,7 @@ This repository contains a fully constructed secondary dataset covering US House
 
 **Press Release:** [Congressional Races Are Decided by Demographics, Not Polls](https://github.com/ameliavasiliu/Project-1-Relational-Model/blob/main/Press_Release.md)
 
-**Data:** [UVA OneDrive Data Folder](https://myuva-my.sharepoint.com/:f:/r/personal/ega9cw_virginia_edu/Documents/Project-1-Relational-Model?csf=1&web=1&e=O6hjyP)
+**Data:** [UVA OneDrive Data Folder](https://myuva-my.sharepoint.com/:f:/g/personal/ega9cw_virginia_edu/IgDlbhkDehaGTolyUlg-QBUOAZoHOG-FaMOJy72xUY7rI6U?e=FO6X5L)
 
 **Pipeline:** [Link to Pipeline folder in GitHub](https://github.com/ameliavasiliu/Project-1-Relational-Model/tree/main/Pipeline)
 
