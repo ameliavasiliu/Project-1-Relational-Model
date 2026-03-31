@@ -128,26 +128,8 @@ The gradient boosting model was chosen over logistic regression because it handl
 
 **Schema -- ER Diagram (Logical Level)**
 
-```mermaid
-erDiagram
-  districts {
-    string district_id PK
-    string state
-    string state_po
-    int district
-    int urban_rural_code
-    string urban_rural_label
-  }
-  elections {
-    string district_id FK
-    int year FK
-    float dem_share
-    ...
-  }
-  districts ||--o{ elections : "district_id"
-  districts ||--o{ demographics : "district_id"
-  national_context ||--o{ elections : "year"
-```
+<img width="727" height="702" alt="Screenshot 2026-03-30 at 9 14 00 PM" src="https://github.com/user-attachments/assets/0823f9c5-ee5a-4bd9-bc8f-23b17f11b8d0" />
+
 
 **Data Table**
 
