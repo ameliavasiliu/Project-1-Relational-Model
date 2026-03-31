@@ -8,7 +8,7 @@ This repository contains a fully constructed secondary dataset covering US House
 
 **NetID:** ega9cw
 
-**DOI:** *(add after uploading to Zenodo or OSF)*
+**DOI:** 10.5281/zenodo.19342839
 
 **Press Release:** [Congressional Races Are Decided by Demographics, Not Polls](https://github.com/ameliavasiliu/Project-1-Relational-Model/blob/main/Press_Release.md)
 
