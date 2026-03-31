@@ -128,32 +128,26 @@ The gradient boosting model was chosen over logistic regression because it handl
 
 **Schema -- ER Diagram (Logical Level)**
 
+```mermaid
+erDiagram
+  districts {
+    string district_id PK
+    string state
+    string state_po
+    int district
+    int urban_rural_code
+    string urban_rural_label
+  }
+  elections {
+    string district_id FK
+    int year FK
+    float dem_share
+    ...
+  }
+  districts ||--o{ elections : "district_id"
+  districts ||--o{ demographics : "district_id"
+  national_context ||--o{ elections : "year"
 ```
-districts (district_id PK, state, state_po, district, urban_rural_code, urban_rural_label)
-    |
-    +----< elections     (district_id FK, year FK, dem_share, rep_share, margin,
-    |                     winner, margin_abs, competitive, competitiveness_score,
-    |                     incumbent_running, open_seat, prev_margin, prev_winner,
-    |                     dem_share_lag, party_flip, dem_swing, redistricting_year)
-    |
-    +----< demographics  (district_id FK, year FK, total_population, cvap_total,
-    |                     median_income, median_age, median_home_value, pct_college,
-    |                     pct_hs_only, pct_white, pct_black, pct_asian, pct_hispanic,
-    |                     pct_nonwhite, poverty_rate, district_unemployment_rate,
-    |                     owner_occ_rate, health_ins_rate)
-    |
-    +----< results_model (district_id FK, year FK, predicted_flip,
-                          predicted_competitive, flip_probability, model_name)
-
-national_context (year PK, generic_ballot_margin, pres_popular_margin, pres_year,
-                  natl_unemployment_rate, natl_gdp_growth, pres_approval)
-    |
-    +----< elections     (year FK)
-    +----< demographics  (year FK)
-    +----< results_model (year FK)
-```
-
-Relationships: `districts` to `elections`, `demographics`, and `results_model` are all one-to-many on `district_id`. `national_context` to `elections`, `demographics`, and `results_model` are all one-to-many on `year`.
 
 **Data Table**
 
