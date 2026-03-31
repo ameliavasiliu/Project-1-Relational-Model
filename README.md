@@ -139,11 +139,11 @@ The gradient boosting model was chosen over logistic regression because it handl
 
 | Table | Description | Link |
 |-------|-------------|------|
-| `districts.parquet` | One row per congressional district (435 rows). Stores static geographic identity and urban-rural classification. Primary key: `district_id` | https://myuva-my.sharepoint.com/:u:/r/personal/ega9cw_virginia_edu/Documents/Project-1-Relational-Model/districts.parquet?csf=1&web=1&e=eX8UKy |
-| `elections.parquet` | One row per district per election year (2,256 rows). Stores vote outcomes, incumbency flags, lagged features, and party flip indicator. Primary key: (`district_id`, `year`) | https://myuva-my.sharepoint.com/:u:/r/personal/ega9cw_virginia_edu/Documents/Project-1-Relational-Model/elections.parquet?csf=1&web=1&e=dmiKVJ |
-| `demographics.parquet` | One row per district per election year (2,256 rows). Stores ACS socioeconomic features. Primary key: (`district_id`, `year`) | https://myuva-my.sharepoint.com/:u:/r/personal/ega9cw_virginia_edu/Documents/Project-1-Relational-Model/demographics.parquet?csf=1&web=1&e=MoKqzh |
-| `national_context.parquet` | One row per election year (6 rows). Stores national macroeconomic and political environment variables. Primary key: `year` | https://myuva-my.sharepoint.com/:u:/r/personal/ega9cw_virginia_edu/Documents/Project-1-Relational-Model/national_context.parquet?csf=1&web=1&e=XvmNzG |
-| `results_model.parquet` | One row per district per election year with model-predicted flip probabilities. Primary key: (`district_id`, `year`) | https://myuva-my.sharepoint.com/:u:/r/personal/ega9cw_virginia_edu/Documents/Project-1-Relational-Model/results_model.parquet?csf=1&web=1&e=O8HKyY |
+| `districts.parquet` | One row per congressional district (435 rows). Stores static geographic identity and urban-rural classification. Primary key: `district_id` | https://myuva-my.sharepoint.com/:u:/r/personal/ega9cw_virginia_edu/Documents/Project-1-Relational-Model/data/tables/districts.parquet?csf=1&web=1&e=zxOGo7 |
+| `elections.parquet` | One row per district per election year (2,256 rows). Stores vote outcomes, incumbency flags, lagged features, and party flip indicator. Primary key: (`district_id`, `year`) | https://myuva-my.sharepoint.com/:u:/r/personal/ega9cw_virginia_edu/Documents/Project-1-Relational-Model/data/tables/elections.parquet?csf=1&web=1&e=CXfD3a |
+| `demographics.parquet` | One row per district per election year (2,256 rows). Stores ACS socioeconomic features. Primary key: (`district_id`, `year`) | https://myuva-my.sharepoint.com/:u:/r/personal/ega9cw_virginia_edu/Documents/Project-1-Relational-Model/data/tables/demographics.parquet?csf=1&web=1&e=4ecaH2 |
+| `national_context.parquet` | One row per election year (6 rows). Stores national macroeconomic and political environment variables. Primary key: `year` | https://myuva-my.sharepoint.com/:u:/r/personal/ega9cw_virginia_edu/Documents/Project-1-Relational-Model/data/tables/national_context.parquet?csf=1&web=1&e=dEsnOy |
+| `results_model.parquet` | One row per district per election year with model-predicted flip probabilities. Primary key: (`district_id`, `year`) | https://myuva-my.sharepoint.com/:u:/r/personal/ega9cw_virginia_edu/Documents/Project-1-Relational-Model/data/tables/results_model.parquet?csf=1&web=1&e=vum4qy |
 
 **Data Dictionary**
 
