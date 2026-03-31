@@ -14,7 +14,7 @@ This repository contains a fully constructed secondary dataset covering US House
 
 **Data:** [UVA OneDrive Data Folder](https://myuva-my.sharepoint.com/:f:/r/personal/ega9cw_virginia_edu/Documents/Project-1-Relational-Model?csf=1&web=1&e=O6hjyP)
 
-**Pipeline:** https://github.com/ameliavasiliu/Project-1-Relational-Model/blob/main/code/06_pipeline.py
+**Pipeline:** [Link to .ipynb in GitHub](https://github.com/ameliavasiliu/Project-1-Relational-Model/blob/main/code/06_pipeline.ipynb)
 
 **License:** MIT License -- see [LICENSE](LICENSE)
 
