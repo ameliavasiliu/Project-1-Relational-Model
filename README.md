@@ -128,7 +128,7 @@ The gradient boosting model was chosen over logistic regression because it handl
 
 **Schema -- ER Diagram (Logical Level)**
 
-<img width="727" height="702" alt="Screenshot 2026-03-30 at 9 14 00 PM" src="https://github.com/user-attachments/assets/0823f9c5-ee5a-4bd9-bc8f-23b17f11b8d0" />
+<img width="738" height="723" alt="Screenshot 2026-03-30 at 9 15 19 PM" src="https://github.com/user-attachments/assets/c0033421-8a10-4835-ab37-2a4012963a69" />
 
 
 **Data Table**
