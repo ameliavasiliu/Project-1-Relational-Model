@@ -16,7 +16,7 @@ This repository contains a fully constructed secondary dataset covering US House
 
 **Pipeline:** [Link to Pipeline folder in GitHub](https://github.com/ameliavasiliu/Project-1-Relational-Model/tree/main/Pipeline)
 
-**License:** MIT License -- see [LICENSE](LICENSE)
+**License:** MIT License --  [LICENSE]([LICENSE](https://github.com/ameliavasiliu/Project-1-Relational-Model/blob/main/LICENSE))
 
 ---
 
